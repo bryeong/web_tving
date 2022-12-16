@@ -1,70 +1,65 @@
-
-@font-face {
-    font-family: Noto Sans KR,-apple-system,BlinkMacSystemFont,Roboto,Segoe UI,Oxygen,Ubuntu,Cantarell,Open Sans,Helvetica Neue,sans-serif;
-}
-
 * {
     margin: 0;
     padding: 0;
 }
 body {
-    height: 100%;
-    width: 100%;
-    /*position: relative;*/
     background-color: #000;
-    color: #fff;
 }
-.logo{
-    display: flex;
+header {
+    width: 100%;
+    height: 5em;
+    padding: inherit;
     position: fixed;
-}
-.logo > a{
-    margin: 23px;
-    text-decoration: none;
-    background: no-repeat;
 
 }
 main {
-    display: block;
+    height: 100%;
 }
-#main-view {
-    width: 100%;
-    /*height: ;*/
-    background-image: url(../images/moweb-img-gradation-0228.png), url(../images/tiving_bgimg.jpg);
-    background-size: cover;
-    text-align: center;
+#title-con {
+    padding: 2em;
 }
-.message-con {
-    /*padding: ;*/
-    font-size: 2rem;
-    font-weight: bold;
-    text-align: center;
-    line-height: 1.25;
-    color:#fff;
-}
+#title-con > a >img{
+    font-size: 2em;
 
+}
+#main-message {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    font-weight: bold;
+    background-image: url(../../static/images/pc-img-gradatrion.png)
+    ,url(../../static/images/F_jpg,2048.jpg);
+    background-size: cover;
+    background-position: bottom, bottom;
+}
+#message-con {
+    position: inherit;
+    padding-top: 4em;
+    margin: auto;
+    font-size: 3vw;
+    text-align: center;
+}
 .message2 {
-    font-size: 1.2rem;
+    font-size: 0.5em;
+    font-weight: bold;
     color: #a3a3a3;
 }
-
-#start-button {
-    /*align-items: center;*/
-    text-align: center;
-    margin-top: 10px;
+#btn-con {
+    padding-top: 2rem;
 }
-/* 메인 버튼 (로그인으로 이동) */
-.login-button {
+button {
+    margin: auto;
+    padding-right: 20px;
     display: flex;
-    position: center;
-    height: 4rem;
-    border-radius: 4px;
-    min-width: 22.5rem;
-    font-size: 1.3rem;
+    font-size: 1.6vw;
     font-weight: bold;
-    color: #fff;
-    background-color: #ff153c;
-}
-.login-button > p {
     align-items: center;
+    height: 3.5em;
+    background-color: #ff1f45;
+    color: #fff;
+    border-radius: 4px;
+}
+button :hover {
+    cursor: pointer;
 }

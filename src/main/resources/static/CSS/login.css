@@ -2,20 +2,110 @@
     margin: 0;
     padding: 0;
 }
-
+/*p {*/
+/*    color: #fff;*/
+/*}*/
 body {
-    background: black;
-    color: white;
+    background-color: #000;
 }
-.logo{
-    display: flex;
-    position: fixed;
-}
-
-main {
+.login_Allcontainer{
+    background-image: url(../../static/images/pc-img-gradatrion.png),
+    url(../../static/images/login-wall.jpg);
+    background-size: 100% auto;
+    background-repeat: no-repeat;
 
 }
+header {
+    width: 100%;
+    height: 5em;
+    padding: inherit;
+    position: relative;
 
-.login-button {
-    border: 1px solid white;
+}
+#title-con {
+    padding: 2em;
+}
+#title-con > a >img{
+    font-size: 2em;
+
+}
+main{
+    margin: auto;
+    text-align: center;
+}
+#login-message {
+    color: #fff;
+    font-weight: bold;
+    font-size: 20px;
+}
+section {
+    width: 100%;
+    height: 100%;
+    margin: 2em auto auto auto;
+}
+#login-con {
+    /*background-color: #000;*/
+    margin: 0 auto;
+    max-width: 60%;
+
+}
+#select-login {
+    margin-top: 0;
+    margin-bottom: 2rem;
+    padding-top: 1rem;
+}
+#btn-con {
+}
+/* 버튼에 마우스 올렸을 때 */
+button :hover {
+    cursor: pointer;
+}
+.login-btn > button{
+    margin: 0.5rem;
+    display: block;
+    width: 100%;
+    height: auto;
+    box-sizing: border-box;
+    font-size: 0.8rem;
+    font-weight: normal;
+    text-align: center;
+    justify-content: center;
+    border: 1px solid #4e4e4e ;
+    background-color: #000;
+    color: #fff;
+    border-radius: 3px;
+
+}
+.login-btn > button >img {
+    float: left;
+    padding: 0.5rem;
+}
+.login-btn > button > p {
+    padding: 0.5rem;
+    color: #a3a3a3;
+}
+#find-id {
+    margin-bottom: 5rem;
+    display: block;
+    text-align: center;
+    font-size: 0.5rem;
+
+}
+#find-id > p {
+    color: #6e6e6e;
+}
+#find-id > a {
+
+    color: #a3a3a3;
+    text-decoration: none;
+}
+footer {
+    margin: 0 2rem;
+    text-decoration: none;
+    color: rgb(110, 110, 110);
+    font-size: 0.5em;
+}
+#footer-menu {
+    padding: 1rem 0;
+    color: rgb(163, 163, 163);
 }
