@@ -1,0 +1,70 @@
+
+@font-face {
+    font-family: Noto Sans KR,-apple-system,BlinkMacSystemFont,Roboto,Segoe UI,Oxygen,Ubuntu,Cantarell,Open Sans,Helvetica Neue,sans-serif;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+body {
+    height: 100%;
+    width: 100%;
+    /*position: relative;*/
+    background-color: #000;
+    color: #fff;
+}
+.logo{
+    display: flex;
+    position: fixed;
+}
+.logo > a{
+    margin: 23px;
+    text-decoration: none;
+    background: no-repeat;
+
+}
+main {
+    display: block;
+}
+#main-view {
+    width: 100%;
+    /*height: ;*/
+    background-image: url(../images/moweb-img-gradation-0228.png), url(../images/tiving_bgimg.jpg);
+    background-size: cover;
+    text-align: center;
+}
+.message-con {
+    /*padding: ;*/
+    font-size: 2rem;
+    font-weight: bold;
+    text-align: center;
+    line-height: 1.25;
+    color:#fff;
+}
+
+.message2 {
+    font-size: 1.2rem;
+    color: #a3a3a3;
+}
+
+#start-button {
+    /*align-items: center;*/
+    text-align: center;
+    margin-top: 10px;
+}
+/* 메인 버튼 (로그인으로 이동) */
+.login-button {
+    display: flex;
+    position: center;
+    height: 4rem;
+    border-radius: 4px;
+    min-width: 22.5rem;
+    font-size: 1.3rem;
+    font-weight: bold;
+    color: #fff;
+    background-color: #ff153c;
+}
+.login-button > p {
+    align-items: center;
+}
