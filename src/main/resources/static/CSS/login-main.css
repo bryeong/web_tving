@@ -5,6 +5,13 @@
 header {
     position: relative;
 }
+#title-con {
+    padding: 1rem 2.3em;
+}
+#title-con > a >img{
+    font-size: 2em;
+
+}
 
 body {
     background-color: #000;

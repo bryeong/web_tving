@@ -9,12 +9,13 @@ body {
     background-color: #000;
 }
 .login_Allcontainer{
-    background-image: url(../../static/images/pc-img-gradatrion.png),
-    url(../../static/images/login-wall.jpg);
+    background-image: url(../images/pc-img-gradatrion.png),
+    url(../images/login-wall.jpg);
     background-size: 100% auto;
     background-repeat: no-repeat;
 
 }
+/* 상단바 (고정) */
 header {
     width: 100%;
     height: 5em;
@@ -23,11 +24,8 @@ header {
 
 }
 #title-con {
-    padding: 2em;
-}
-#title-con > a >img{
-    font-size: 2em;
-
+    display: flex;
+    padding: 1rem 2.3em;
 }
 main{
     margin: auto;

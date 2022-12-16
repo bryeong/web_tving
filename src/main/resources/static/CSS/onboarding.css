@@ -3,6 +3,9 @@
     padding: 0;
 }
 body {
+    height: 100%;
+    width: 100%;
+    position: relative;
     background-color: #000;
 }
 header {
@@ -16,8 +19,9 @@ main {
     height: 100%;
 }
 #title-con {
-    padding: 2em;
+    padding: 1rem 2.3em;
 }
+
 #title-con > a >img{
     font-size: 2em;
 
@@ -28,8 +32,8 @@ main {
     align-items: center;
     color: #fff;
     font-weight: bold;
-    background-image: url(../../static/images/pc-img-gradatrion.png)
-    ,url(../../static/images/F_jpg,2048.jpg);
+    background-image: url(../images/moweb-img-gradation-0228.png)
+    ,url(../images/F_jpg,2048.jpg);
     background-size: cover;
     background-position: bottom, bottom;
 }

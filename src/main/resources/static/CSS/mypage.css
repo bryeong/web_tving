@@ -1,0 +1,40 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+body {
+    height: 100%;
+    width: 100%;
+    position: relative;
+    background-color: #000;
+}
+
+header {
+    width: 100%;
+    padding: inherit;
+    background-color: #000;
+}
+#title-con {
+    position: fixed;
+    display: flex;
+    padding: 1rem 2.3em;
+}
+.menu-icon {
+    display: flex;
+    margin-right: 2rem;
+    align-items: center;
+}
+.menu-icon > a {
+    color: rgba(255,255,255,1);
+    font-weight: bold;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+/* 상단 나의 정보 */
+#user-profil-con {
+    padding: 5rem 2.3em;
+    background-color: rgb(25, 25, 25);
+}
+
+

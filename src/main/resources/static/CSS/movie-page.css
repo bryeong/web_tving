@@ -1,6 +1,7 @@
 * {
     margin: 0;
     padding: 0;
+    /*height: 100%;*/
 }
 
 body {
@@ -9,21 +10,64 @@ body {
     position: relative;
     background-color: #000;
     color: #fff;
+    background-image: url(../images/기생충_poster.webp);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    backdrop-filter: blur(30px);
+    /*filter: blur(15px);*/
+}
+#allCon {
+    /*min-height: 100%;*/
+    /*position: relative;*/
+
+}
+/* 상단 바 (고정) */
+header {
+    width: 100%;
+    height: 5em;
+    padding: inherit;
+    position: fixed;
+
+}
+main {
+}
+#title-con {
+    display: flex;
+    padding: 1rem 2.3em;
+}
+.menu-icon {
+    display: flex;
+    margin-right: 2rem;
+    align-items: center;
+}
+.menu-icon > a {
+    color: rgba(255,255,255,1);
+    font-weight: bold;
+    text-decoration: none;
+    cursor: pointer;
 }
 
 #sec1 {
+    margin: 0;
+    margin-bottom: 4rem;
+    padding-top: 0;
     display: flex;
     width: 100%;
     height: 500px;
+    background-image:url(../images/moweb-img-gradation-0228.png);
+    background-size: cover;
+
 }
 .info-con {
     position: relative;
     margin: 0;
-    padding: 50px;
+    padding: 60px;
 }
 
 #movie-info-con {
     /*display: flex;*/
+    height: 100%;
     width: 50%;
     float: left;
 }
@@ -88,7 +132,6 @@ body {
 
 #movie-img-con {
     width: 50%;
-    height: auto;
 }
 
 #movie-img {
@@ -102,17 +145,36 @@ body {
     position: relative;
 }
 #movie-link {
+    margin: 1.4rem 0;
+    padding: 0 2rem;
     width: 100%;
+    height: 30%;
     display: flex;
-    /*position: absolute;*/
+    position: absolute;
+    bottom: 0;
 }
 #movie-link > button {
+    padding: 5px;
+    width: 100%;
+    /*height: 40%;*/
     display: block;
     margin-bottom: 0;
+    border: none;
+    background: rgba(0,0,0,0);
+    color: rgb(255,255,255);
+    font-weight: bold;
+    cursor: pointer;
+}
+/* 찜, 공유 아이콘 이미지 */
+#movie-link > button > i {
+    /*font-weight: normal;*/
+    width: 100%;
+    height: 50%;
+}
+#movie-img {
 }
 
 #movie-img > img {
-    position: absolute;
     width: 68%;
     height: auto;
     padding-top: 10px;
@@ -137,4 +199,8 @@ body {
     margin-top: 20px;
     font-size: 1.4vw;
 
+}
+
+footer {
+    position: fix;
 }
