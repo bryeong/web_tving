@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "https://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.koreait.tving.mapper.UserMapper">
+    <insert id="register" parameterType="com.koreait.tving.vos.UserVO">
+        INSERT INTO `user_tbl` (`id`, `password`,`nickName`, `email`)
+        VALUES (#{id}, #{password}, #{id}, #{email})
+    </insert>
+
+    <select id="find_user" resultType="com.koreait.tving.vos.UserVO">
+        SELECT * FROM `user_tbl` WHERE id = #{id}
+    </select>
+
+    <update id="modify_user" parameterType="com.koreait.tving.vos.UserVO">
+        UPDATE `user_tbl` SET `email` = #{email}, `tel` = #{tel}
+        WHERE `id` = #{id}
+    </update>
+</mapper>
