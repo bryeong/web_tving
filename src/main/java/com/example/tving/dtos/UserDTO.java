@@ -1,13 +1,16 @@
 package com.example.tving.dtos;
 
-import lombok.Getter;
-import lombok.Setter;
-import lombok.ToString;
+import lombok.*;
+import org.springframework.security.core.GrantedAuthority;
+import org.springframework.security.core.userdetails.User;
+
+import java.util.Collection;
+import java.util.Date;
 
 @Getter
 @Setter
 @ToString
-public class UserDTO {
+public class UserDTO extends User {
     private String id;
     private String password;
     private String name;

@@ -42,12 +42,12 @@ public class CustomSecurityConfig {
                 .formLogin()
                 .loginPage("/user/login")
                 .successForwardUrl("/user/login");
+        httpSecurity.logout().logoutSuccessUrl("/");
+
         httpSecurity.csrf().disable();
 
-        //403에러 처리 부분
+        // 403에러 처리 부분
 //        httpSecurity.exceptionHandling().accessDeniedHandler(accessDeniedHandler());
-
-
         return httpSecurity.build();
     }
 
@@ -55,8 +55,6 @@ public class CustomSecurityConfig {
     public AccessDeniedHandler accessDeniedHandler(){
         return new Custom403Handler();
     }
-
-
 
     @Bean
     public PersistentTokenRepository persistentTokenRepository(){
@@ -70,6 +68,4 @@ public class CustomSecurityConfig {
         log.info(" -------------- web security customizer configure ----------- ");
         return web -> web.ignoring().requestMatchers(PathRequest.toStaticResources().atCommonLocations());
     }
-
-
 }

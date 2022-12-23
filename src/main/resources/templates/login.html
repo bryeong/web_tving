@@ -1,16 +1,17 @@
 <!DOCTYPE html>
-<html lang="ko">
+<html lang="ko" xmlns:th="http://www.thymeleaf.org"
+      xmlns:sec="http://www.thymeleaf.org/extras/spring-security">
 <head>
     <meta charset="UTF-8">
     <title>로그인</title>
-    <link rel="stylesheet" href="../../static/CSS/login.css">
+    <link rel="stylesheet" href="../static/CSS/login.css" th:href="@{CSS/login.css}">
 </head>
 <body>
 <div class="login_Allcontainer">
 <header>
     <div id="title-con">
-        <a href="/">
-            <img src="../../static/images/tving-new-logo-pc.svg" alt="TVING">
+        <a th:href="@{/}">
+            <img src="../../static/images/tving-new-logo-pc.svg" th:src="@{IMAGES}" alt="TVING">
         </a>
     </div>
 </header>
@@ -25,25 +26,25 @@
                 <div id="btn-con">
                     <div id="tving-login" class="login-btn">
                         <button type="button">
-                            <img src="../../static/images/icon-id-tving.svg" width="20rem" alt="tving-icon">
+                            <img src="../static/images/icon-id-tving.svg" th:src="@{/images/icon-id-tving.svg}" width="20rem" alt="tving-icon">
                             <p>TVING ID로 시작하기</p>
                         </button>
                     </div>
                     <div id="naver-login" class="login-btn">
                         <button type="button">
-                            <img src="../../static/images/icon-naver.svg" width="20rem" alt="naver-icon">
+                            <img src="../static/images/icon-naver.svg" th:src="@{/images/icon-naver.svg}" width="20rem" alt="naver-icon">
                             <p>네이버로 시작하기</p>
                         </button>
                     </div>
                     <div id="kako-login" class="login-btn">
                         <button type="button">
-                            <img src="../../static/images/icon-id-kakao.svg" width="20rem" alt="kakao-icon">
+                            <img src="../static/images/icon-id-kakao.svg" th:src="@{/images/icon-id-kakao.svg}" width="20rem" alt="kakao-icon">
                             <p>카카오로 시작하기</p>
                         </button>
                     </div>
                     <div id="cj-login" class="login-btn">
                         <button type="button">
-                            <img src="../../static/images/icon-id-cj.png" width="20rem" alt="cj-icon">
+                            <img src="../static/images/icon-id-cj.png" th:src="@{/images/icon-id-cj.png}"  width="20rem" alt="cj-icon">
                             <p>CJ ONE으로 시작하기</p>
                         </button>
                     </div>

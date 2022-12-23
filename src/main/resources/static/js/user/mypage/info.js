@@ -9,11 +9,11 @@ confirmBtn.addEventListener('click', e => {
     inputEmail.value = emailHost.value + '@' + emailDomain.value;
     inputTel.value = phoneHead.value + '-' + telMiddle.value + '-' + telFoot.value;
 
-    infoForm.action = '/user/info';
+    infoForm.action = '/user/mypage/info';
     infoForm.method = 'post';
     infoForm.submit();
 });
 
 cancelBtn.addEventListener('click', e => {
-    document.location.href = '/main';
+    document.location.href = '/user/mypage/main';
 });

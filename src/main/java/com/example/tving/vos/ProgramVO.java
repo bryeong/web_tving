@@ -2,6 +2,8 @@ package com.example.tving.vos;
 
 import lombok.*;
 
+import java.util.List;
+
 @Data
 @Builder
 @ToString
@@ -15,4 +17,7 @@ public class ProgramVO {
     private String distributor;
     private String introduce;
     private String classification;
+    private List<String> creators;
+    private List<String> casts;
+
 }

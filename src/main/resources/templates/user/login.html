@@ -1,15 +1,16 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ko" xmlns:th="http://www.thymeleaf.org"
+      xmlns:sec="http://www.thymeleaf.org/extras/spring-security">
 <head>
     <meta charset="UTF-8">
     <title>TVINGID로그인</title>
-    <link rel="stylesheet" href="../../../static/CSS/login-main.css">
+    <link rel="stylesheet" href="../../static/CSS/user/login.css" th:href="@{/CSS/user/login.css}">
 </head>
 <body>
 <header>
     <div id="title-con">
-        <a href="/static">
-            <img src="../../../static/images/tving-new-logo-pc.svg" alt="TVING">
+        <a th:href="@{/}">
+            <img src="../../static/images/tving-new-logo-pc.svg" th:src="@{IMAGES}" alt="TVING">
         </a>
     </div>
 </header>

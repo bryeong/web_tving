@@ -33,7 +33,7 @@ public class CustomUserDetailsService implements UserDetailsService {
 
         log.info("유저를 찾았습니다!");
 
-        return new UserDTO(
+        return (UserDetails) new UserDTO(
                 username,
                 userVO.getPassword(),
                 userVO.getName(),

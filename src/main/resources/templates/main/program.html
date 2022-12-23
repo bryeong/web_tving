@@ -1,32 +1,32 @@
 <!DOCTYPE html>
-<html lang="ko">
+<html lang="ko" xmlns:th="http://www.thymeleaf.org">
 <head>
     <meta charset="UTF-8">
     <title>기생충</title>
-    <link rel="stylesheet" href="../../static/CSS/movie-page.css">
     <script src="https://kit.fontawesome.com/98fb4054a6.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="../../static/CSS/main/program.css" th:href="@{/CSS/main/program.css}">
 </head>
 <body>
 <div id="allCon">
     <header>
         <div id="title-con">
             <div class="menu-icon">
-                <a href="/" id="tving">
-                    <img src="../../static/images/tving-new-logo-pc.svg" alt="TVING">
+                <a th:href="@{/}">
+                    <img src="../../static/images/tving-new-logo-pc.svg" th:src="@{IMAGES}" alt="TVING">
                 </a>
             </div>
             <div class="menu-icon">
-                <a href="#" id="live">
-                    <img src="../../static/images/icon_menu_live.svg" alt="실시간아이콘">
+                <a th:href="@{/}" id="live">
+                    <img src="../../static/images/icon_menu_live.svg" th:src="@{/images/icon_menu_live.svg}" alt="실시간아이콘">
                     <span>실시간</span>
                 </a>
             </div>
             <div class="menu-icon">
-                <a href="#" id="program">TV프로그램</a>
+                <a th:href="@{/}" id="program">TV프로그램</a>
             </div>
             <div class="menu-icon">
-                <a href="#" id="paramount">
-                    <img src="../../static/images/menu_paramount.svg" alt="">
+                <a th:href="@{/}" id="paramount">
+                    <img src="../../static/images/menu_paramount.svg" th:src="@{/images/menu_paramount.svg}" alt="파라마운트">
                 </a>
             </div>
         </div>
@@ -37,10 +37,10 @@
                 <div id="con1">
                     <div id="con1-A">
                         <div id="movie-logo">
-                            <img src="../../static/images/기생충_logo.webp" alt="기생충-로고">
+                            <img src="../../static/images/기생충_logo.webp" th:src="@{/images/기생충_logo.webp}" alt="기생충-로고">
                         </div>
                         <div id="movie-info-tag">
-                            <img src="../../static/images/tag_15.svg" alt="">
+                            <img src="../../static/images/tag_15.svg" th:src="@{/images/tag_15.svg}" alt="">
     <!--                        <div class="tag tag-age"></div>-->
                             <div class="tag">2019</div>
                             <div class="tag">드라마</div>
@@ -96,7 +96,7 @@
             </div>
             <div id="movie-img-con" class="info-con">
                 <div id="movie-img">
-                    <img src="../../static/images/기생충_poster.webp" alt="기생충메인포스터">
+                    <img src="../../static/images/기생충_poster.webp" th:src="@{/images/기생충_poster.webp}" alt="기생충메인포스터">
                 </div>
             </div>
     <!--        <div id="more-summary">-->
